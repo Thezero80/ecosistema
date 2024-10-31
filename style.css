@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+    color: #333;
+    background-image: url("https://i.pinimg.com/originals/e5/af/cc/e5afccb9ff2f7c01a4cddb93b2181725.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+}
+
+.container {
+    text-align: center;
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-hermosas-flores-color-purpura_23-2148998764.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    padding: 50px;
+    margin: auto;
+    margin-top: 150px;
+    border: red 5px ridge;
+    width: 50%;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.butterfly,
+.orchid {
+    width: 100px;
+    position: relative;
+    animation: float 3s ease-in-out infinite;
+}
+
+.login-button {
+    display: inline-block;
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.login-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.inpu {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.inpu:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button{
+    margin: 20px;
+    padding: 5px;
+    background: linear-gradient(to right, #f2b8f7, #f307d7);
+}
+
+.logo {
+    width: 18vh;
+    height: 18vh;
+    border-radius: 15px;
+    position: relative;
+    animation: float 3s ease-in-out infinite;
+}
+
+hr {
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.error {
+    color: red;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translatey(0);
+    }
+
+    50% {
+        transform: translatey(-10px);
+    }
+}
