@@ -1,0 +1,70 @@
+<!-- <?php
+session_start();
+include 'db.php';
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $codigo = $_POST['codigo'];
+  
+    // Verificar código y mostrar alerta de bienvenida personalizada
+    switch ($codigo) {
+        case '74950634':
+            $_SESSION['loggedin'] = true;
+            header("Location: app.php");
+            exit;
+        case '76978478':
+            $_SESSION['loggedin'] = true;
+            header("Location: app.php");
+            exit;
+        default:
+            $error = "Código incorrecto.";
+    }
+}
+?> -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Iniciar Sesión - ECOSISTEMA</title>
+    <style>
+        #error-message {
+            color: red;
+            display: none; /* Ocultar el mensaje por defecto */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>𝑰𝒏𝒊𝒄𝒊𝒂𝒓 𝑺𝒆𝒔𝒊ó𝒏</h2>
+        <hr>
+        <img src="logo.jpg" alt="" class="logo">
+        <form method="POST" id="login-form">
+            <input type="text" name="codigo" placeholder="Ingrese el código" class="inpu" required>
+            <div id="error-message">Código incorrecto.</div>
+            <button type="submit">𝗜𝗡𝗚𝗥𝗘𝗦𝗔𝗥</button>
+        </form>
+        <br>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evitar el envío del formulario
+
+            const codigo = this.codigo.value; // Obtener el valor del campo de entrada
+            const errorMessage = document.getElementById('error-message');
+
+            // Verificar el código
+            if (codigo === '74950634' || codigo === '76978478') {
+                window.location.href = 'app.html'; // Redirigir a app.html
+            } else {
+                errorMessage.style.display = 'block'; // Mostrar mensaje de error
+            }
+        });
+    </script>
+</body>
+
+</html>
