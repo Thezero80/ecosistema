@@ -111,14 +111,25 @@
                                                 <div class="card h-100">
                                                     <video src="assets/video1.mp4" class="card-img-top" autoplay
                                                         controls></video>
-                                                    <div class="card-body">
+                                                    <div class="card-body" id="texto">
                                                         <h5 class="card-title">Luna&Thezero</h5>
-                                                        <p class="card-text">Eres el arquitecto que diseña el paisaje de
-                                                            mi corazón❤️, el pintor que colorea mi vida con vibrantes
-                                                            tonos de ternura🫶, el autor que escribe la historia de
-                                                            nuestra compañia con letras de pasión✨, y el compositor que
-                                                            crea la melodía que resuena en mi alma🦋, haciéndome sentir
-                                                            vivo y lleno de emoción en cada momento que compartimos🥲
+                                                        <p class="card-text">Leer Más
+                                                        </p>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <small class="text-body-secondary">Last updated 3 mins
+                                                            ago</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <!--video 2-->
+                                                <div class="card h-100">
+                                                    <video src="assets/video2.mp4" class="card-img-top" autoplay
+                                                        controls></video>
+                                                    <div class="card-body" id="texto2">
+                                                        <h5 class="card-title">Luna</h5>
+                                                        <p class="card-text">Leer Más
                                                         </p>
                                                     </div>
                                                     <div class="card-footer">
@@ -172,13 +183,15 @@
                             <p class="cuerpito"><b>1. Introducción</b>
 
                                 Este documento establece los términos y condiciones que rigen el acceso y uso del sitio
-                                web "𝔼ℂ𝕆𝕊𝕀𝕊𝕋𝔼𝕄𝔸" (en adelante, el "Sitio"). Al acceder o utilizar el Sitio, aceptas
+                                web "𝔼ℂ𝕆𝕊𝕀𝕊𝕋𝔼𝕄𝔸" (en adelante, el "Sitio"). Al acceder o utilizar el Sitio,
+                                aceptas
                                 estos términos en su totalidad. <br>
 
                                 <b>2. Contenido del Sitio</b>
 
                                 El contenido del Sitio, incluyendo pero no limitado a texto, imágenes, videos y otros
-                                materiales, es propiedad exclusiva de 𝔼ℂ𝕆𝕊𝕀𝕊𝕋𝔼𝕄𝔸 y está protegido por las leyes de
+                                materiales, es propiedad exclusiva de 𝔼ℂ𝕆𝕊𝕀𝕊𝕋𝔼𝕄𝔸 y está protegido por las leyes
+                                de
                                 derechos de autor y propiedad intelectual. <br>
 
                                 <b>3. Uso del Sitio</b>
@@ -254,6 +267,14 @@
                         if (event.target == modal) {
                             modal.style.display = "none";
                         }
+                    }
+                    texto2 = document.getElementById("texto2")
+                    texto2.onclick = function () {
+                        alert("Eres la primera persona por la cual aposté amar arriesgandome de muchas cosas, pero aun asi Te quiero, si tengo que esperar, esperaré, solo espero que no sea demasiado tarde porque lo que yo siento porti es sincero y prometo ayudarte, protejerte, respetarte, y ser leal, porque un dia mi mamita me dijo que a las mujeres se las trata como princesas y para mi eres mucho más que una reyna, yo quiero algo bonito talvez no ahora por todos los problemas que hay, pero yo te esperaré, eres una mujer maravillosa en todos los aspectos, me encanta tal cual eres y quiero que seas mi futura señorita enamorada, esperaré al momento perfecto si, sabes que siempre traté de hacer todo por ti, lo hacia con tal de verte feliz porque me encanta cuando sonries... pero si de tu parte ya quieres poner fin a ésto sabre entender por el momento sé que no es como antes y lo entiendo, quisiera seguir conociendote si es que estas de acuerdo pero si en caso ya no quieres como que ya no quieres talvez mas adelante tener algo bonito solo dímelo por favor porque yo no puedo dormir me enamoré enserio, al conocerte como que algo en mi hay que no puedo dejar de pensarte, bueno creo que es demaciado texto parael sitio jejeje, apostaré por nosotros porque nome quiero dar por vencido yo quiero luchar por lo bonito que un dia te prometí y aí sera se que en el trayecto habrá muchos obstaculos pero quiero que tambien me ayudes luchar por lo bonito que vendrá yo te prometo que si ponemos el esfuerzo ambos nada sera obstaculo para ambos ya que juntos podremos con todo estoy seguro, Te quiero y muchoooooo")
+                    }
+                    texto = document.getElementById("texto")
+                    texto.onclick = function () {
+                        alert("Eres el arquitecto que diseña el paisaje de mi corazón❤️, el pintor que colorea mi vida con vibrantes tonos de ternura🫶, el autor que escribe la historia de nuestra compañia con letras de pasión✨, y el compositor que crea la melodía que resuena en mi alma🦋, haciéndome sentir vivo y lleno de emoción en cada momento que compartimos🥲")
                     }
                 </script>
             </div>
